@@ -37,3 +37,5 @@ N/A
 GitHub Profile: [bwolson31](https://github.com/bwolson31)
 
 For additional questions, contact me via email: bwolson31@gmail.com
+
+![Weather Dashboard Image](WeatherDashboardImage.png)
