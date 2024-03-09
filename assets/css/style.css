@@ -1,0 +1,198 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    color: white; 
+    background-image: linear-gradient(to right, rgba(68, 72, 186, 1), rgba(60, 62, 128, 1));
+    padding: 4px;
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.col-1 {
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh;
+    width: 20%;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 95%;
+    height: 45px;
+    background-color: gray;
+    font-size: 16px;
+    color: black;
+}
+
+#search-btn {
+    background-image: linear-gradient(to right, rgb(89, 94, 240), rgba(68, 72, 186, 1));
+    height: 45px;
+    font-size: 16px;
+    width: 97%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    
+}
+
+.city-input {
+    height: 35px;
+    width: 95%;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 22px;
+
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column; 
+    width: 75%;
+    
+}
+
+#current-weather {
+    border: 3px solid black;
+    height: 25%;
+    width: 90%;
+    margin-top: 10px;
+    display: flex; 
+    flex-direction: column;
+
+
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-top: 1px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+
+#five-day-header {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+
+
+#five-day {
+    display: flex;
+}
+
+
+.listing-body {
+    background-color: #40426B;
+    color: white; 
+    flex: 0 0 auto;
+    width: 14%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-right: 10px;
+    flex-wrap: nowrap;
+
+}
+
+.listing-title, .listing-text {
+    text-align: left; 
+}
+
+.listing-title {
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+
+@media only screen and (max-width: 1172px) {
+
+    .listing-title {
+        font-weight: bold;
+        font-size: 20px;
+    
+    }
+    
+}
+
+/* For screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+    #five-day, .listing-body {
+        width: 100%;
+        margin-right: 0;
+        flex-direction: column;
+        
+}
+
+
+.listing-title, .listing-text {
+    text-align: center; 
+}
+}
+
+/* For screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+    .header {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full-width on small screens */
+    }
+
+    .city-input {
+        width: 100%; /* Make input full-width on small screens */
+    }
+
+    #five-day, .listing-body {
+        width: 100%;
+        flex-direction: column; 
+    
+
+    }
+
+    .listing-title, .listing-text {
+        text-align: center; 
+    }
+}
